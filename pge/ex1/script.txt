@@ -1,0 +1,4 @@
+reset;
+model model.txt;
+solve;
+display x,y;

@@ -1,0 +1,8 @@
+reset;
+model model.txt;
+data data.txt;
+solve;
+display x;
+display y;
+printf{i in 1..N}: "%10f \n", y[i]
+> result.txt;

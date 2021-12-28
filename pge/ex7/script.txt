@@ -1,0 +1,5 @@
+reset;
+model model_exo_3_2.txt;
+data data_exo_3_2.txt;
+solve;
+display x, R, D, S;

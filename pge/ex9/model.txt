@@ -1,0 +1,5 @@
+param N;
+var x{1..N};
+param y{1..N};
+param alpha= 1;
+minimize f: sum{i in 1..N} abs(y[i]-x[i]) + alpha*(sum{i in 2..N} (x[i]-x[i-1])^2);

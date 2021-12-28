@@ -1,0 +1,17 @@
+reset;
+model model.txt;
+data data.txt;
+
+let {i in 1..N} x[i]:= y[i];
+
+solve;
+display x;
+
+reset;
+model model2.txt;
+data data.txt;
+
+let {i in 1..N} x[i]:= y[i];
+
+solve;
+display x;

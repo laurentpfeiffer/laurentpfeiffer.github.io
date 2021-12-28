@@ -1,0 +1,8 @@
+param N;
+var x{1..N};
+var z{1..N};
+param y{1..N};
+param alpha= 1;
+minimize f: sum{i in 1..N} z[i] + alpha*(sum{i in 2..N} (x[i]-x[i-1])^2);
+s.t. c_1 {i in 1..N} : z[i] >= y[i]-x[i];
+s.t. c_2 {i in 1..N} : z[i] >= x[i]-y[i];

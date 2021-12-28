@@ -1,0 +1,15 @@
+var p;
+var alpha;
+var t_0;
+
+param N;
+param t{1..N};
+param P{1..N};
+
+var g{i in 1..N} = p/(1+exp(-alpha*(t[i]-t_0)));
+
+minimize f: sum{i in 1..N} (P[i]-g[i])^2;
+
+let p:= 500;
+let t_0:= 2000;
+let alpha:= 0.024;

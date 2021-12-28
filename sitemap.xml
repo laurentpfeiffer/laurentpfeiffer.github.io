@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://laurentpfeiffer.gitlab.io/web/cv/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://laurentpfeiffer.gitlab.io/web/pge/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://laurentpfeiffer.gitlab.io/web/research/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://laurentpfeiffer.gitlab.io/web/sod/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://laurentpfeiffer.gitlab.io/web/teaching/</loc>
+    <priority>0</priority>
+  </url><url>
+    <loc>https://laurentpfeiffer.gitlab.io/web/about/</loc>
+  </url><url>
+    <loc>https://laurentpfeiffer.gitlab.io/web/categories/</loc>
+  </url><url>
+    <loc>https://laurentpfeiffer.gitlab.io/web/</loc>
+  </url><url>
+    <loc>https://laurentpfeiffer.gitlab.io/web/tags/</loc>
+  </url>
+</urlset>
