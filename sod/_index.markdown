@@ -20,7 +20,7 @@
     Frédéric Bonnans: 14.09, 15.09, 21.09, 28.09, 05.10, 12.10, 19.10 <br/>
     Exam: 09.11 (14:00-17:00)
     </li> <br/>
-    <li> Webpage of Frédéric Bonnans: <a href= "http://www.cmap.polytechnique.fr/~bonnans/notes/oc/oc.html" target= "windows2">link</a>.
+    <li> Webpage of Frédéric Bonnans: <a href= "https://pages.saclay.inria.fr/frederic.bonnans/oc.html" target= "windows2">link</a>.
     </li>
 </ul>
 
