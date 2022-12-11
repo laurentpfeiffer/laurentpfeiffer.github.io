@@ -1,0 +1,35 @@
+Installing AMPL:
+https://ampl.com/try-ampl/download-a-free-demo/
+Please follow carefully the instructions corresponding to your operating system.
+
+Working with AMPL with IDE:
+1. Create a file "model.txt" with the following text:
+var x;
+minimize f: x^2;
+2. Create a file "script.txt" with the following text:
+reset;
+model model.txt;
+solve;
+display x;
+3. Save the files "model.txt" and "script.txt" in the folder of your choice.
+4. Click on Amplide in your AMPL folder.
+5. Open the folder containing the two files.
+6. Type "include script.txt" in the console.
+
+Working with AMPL with the terminal:
+1. Create a folder called "test" in the AMPL folder.
+2. In the test folder, create a file "model.txt" with the following text:
+var x;
+minimize f: x^2;
+2. In the test folder, create a file "script.txt" with the following text:
+reset;
+option solver './minos';
+model test/model.txt;
+solve;
+display x;
+3. Open the terminal and go to the AMPL folder (with the cd command).
+4. Type:
+./ampl
+5. Type:
+include test/script.txt;
+

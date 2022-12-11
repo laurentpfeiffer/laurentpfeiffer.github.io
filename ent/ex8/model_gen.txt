@@ -1,0 +1,12 @@
+param N;
+param M;
+param J{1..N};
+param d{1..M};
+param s{1..M};
+param R{1..M};
+
+var I{1..M};
+
+minimize f: sum{e in 1..M} 0.5*R[e]*I[e]^2;
+
+s.t. g {k in 1..N} : J[k] + sum{e in 1..M : s[e]= k} I[e] = sum{e in 1..M : d[e]= k} I[e];

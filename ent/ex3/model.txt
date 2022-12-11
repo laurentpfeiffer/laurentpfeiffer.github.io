@@ -1,0 +1,15 @@
+param x_I;
+param y_I;
+param x_F;
+param y_F;
+param N;
+
+var x{1..N};
+var y{1..N};
+
+minimize f: sum {i in 1..N} y[i];
+s.t. g_1: x[1]= x_I;
+     g_2: y[1]= y_I;
+     g_3: x[N]= x_F;
+     g_4: y[N]= y_F;
+     g_5 {i in 1..(N-1)}: (x[i+1]-x[i])^2 + (y[i+1]-y[i])^2 <= 1;

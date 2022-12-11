@@ -1,0 +1,9 @@
+param N:= 21;
+param x{i in 1..N} := (i-1)/(N-1);
+param y{i in 1..N} := exp(x[i]); 
+
+var a;
+var b;
+var c;
+
+minimize f: sum {i in 1..N} (y[i]-(a*x[i]^2 + b*x[i] + c))^2;

@@ -1,0 +1,20 @@
+param n;
+param T;
+
+param a{1..n};
+param b{1..n};
+param c{1..n};
+param P_min{1..n};
+param P_max{1..n};
+param R_min{1..n};
+param R_max{1..n};
+param L{1..T};
+
+var P{1..n,1..T};
+
+minimize f: sum{i in 1..n, t in 1..T} a[i]*P[i,t]^2 + b[i]*P[i,t] + c[i];
+s.t. c_1 {i in 1..n, t in 1..T} : P_min[i] <= P[i,t];
+s.t. c_2 {i in 1..n, t in 1..T} : P_max[i] >= P[i,t];
+s.t. c_3 {i in 1..n, t in 2..T} : P[i,t]-P[i,t-1] >= R_min[i];
+s.t. c_4 {i in 1..n, t in 2..T} : P[i,t]-P[i,t-1] <= R_max[i];
+s.t. c_5 {t in 1..T} : (sum {i in 1..n} P[i,t]) >= L[t]; 

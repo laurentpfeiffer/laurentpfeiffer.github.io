@@ -1,0 +1,9 @@
+reset;
+model model.txt;
+data data.txt;
+solve;
+display x;
+display y;
+display g_1.dual;
+display g_2.dual;
+display g_3.dual;

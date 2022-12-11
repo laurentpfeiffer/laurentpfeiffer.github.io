@@ -1,0 +1,27 @@
+param n;
+param T;
+param Smax;
+param Smin;
+param Si;
+param Sf;
+param Amax;
+
+param Q{1..12};
+param B{1..4};
+param d{1..4,1..12};
+
+var x{1..n};
+var R{1..T};
+var D{1..T};
+var S{0..T};
+
+maximize f: sum{i in 1..n} B[i]*x[i];
+s.t. c_1{t in 1..T} : S[t] >= Smin;
+s.t. c_2{t in 1..T} : S[t] <= Smax;
+s.t. c_3{i in 1..n} : x[i] >= 0;
+s.t. c_4 : sum{i in 1..n} x[i] <= Amax;
+s.t. c_5{t in 1..T} : sum{i in 1..n} d[i,t]*x[i]= 0.5*D[t];
+s.t. c_6 : S[0]= Si;
+s.t. c_7{t in 1..T} : S[t]= S[t-1] + Q[t] - R[t];
+s.t. c_8{t in 1..T} : D[t] <= R[t];
+s.t. c_9 : S[T] >= Sf; 

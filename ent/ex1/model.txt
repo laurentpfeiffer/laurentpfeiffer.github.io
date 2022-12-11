@@ -1,0 +1,5 @@
+var x;
+var y;
+minimize f: x^3/3 + x^2/2 + 2*x*y + y^2/2 - y + 9;
+let x:= 1.001;
+let y:= -1.001;

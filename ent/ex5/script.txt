@@ -1,0 +1,5 @@
+reset;
+model model.txt;
+data data.txt;
+solve;
+display P;

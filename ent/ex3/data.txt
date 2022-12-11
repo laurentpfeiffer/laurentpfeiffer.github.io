@@ -1,0 +1,5 @@
+param N:= 20;
+param x_I:= 0;
+param y_I:= 0;
+param x_F= 6;
+param y_F= 0;

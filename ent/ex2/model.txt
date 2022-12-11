@@ -1,0 +1,11 @@
+param x_0;
+param y_0;
+
+var x;
+var y;
+
+minimize f: 0.5*(x-x_0)^2 + 0.5*(y-y_0)^2;
+
+s.t. g_1: 1-x-y >= 0;
+     g_2: x >= 0;
+     g_3: y >= 0;
