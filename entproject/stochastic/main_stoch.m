@@ -25,8 +25,14 @@ N_S= 200;
 %%%%%%
 % Expected results
 % Exercise 6: J_eval= 10.2490
-% Exercise 7: evaluation cost of the naive strategy= 126.4583.
-% Exercise 8: evaluation cost of the reasonable strategy= 68.1467
+% Exercise 7: evaluation cost of the naive strategy= 52.83.
+
+%J = naive_eval()
+
+% Exercise 8: evaluation cost of the reasonable strategy= 28.0550
+
+%J = reasonable_eval()
+
 % Exercise 9: for N_E= 10, the first column of E is
 %    -4.7773
 %    -4.0120
@@ -49,8 +55,24 @@ N_S= 200;
 %     0.6303
 %     0.7166
 %     0.8794
+
+
+[gamma, beta, E] = auto_reg_1(10);
+E(:,1)
+
 % Exercise 11
 % N_E= 10;
-% Cost of first scenario: - 79.9958
-% Evaluation cost: 19.2384.
+% Cost of first scenario: - 79.9958 / -97.6837
+% Evaluation cost: 19.2384 / 19.2315
 
+%J= predictive_online(D_S(1,T_0+1:end),gamma,beta);
+%J = predictive_eval(gamma,beta);
+
+% Exercise 12;
+global J
+J= 10;
+N_E= 10;
+%alpha= DP_backward_0(N_E);
+cost = DP_forward_0_eval(N_E);
+%cost
+% Answer: 10.27
