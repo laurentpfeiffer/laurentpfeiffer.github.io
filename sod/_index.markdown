@@ -14,6 +14,8 @@
 
 ### Practical information
 
+The lecture takes place at Ensta-Paris.
+
 First part of the course:
 <ul>
 <li> 13.09 (13:30-17:15) Analytical background, motivating examples (Bonalli) </li>
